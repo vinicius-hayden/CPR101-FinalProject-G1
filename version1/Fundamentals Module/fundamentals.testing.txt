@@ -1,0 +1,44 @@
+*** Start of Indexing Strings Demo ***
+Type not empty string (q - to quit):
+Good Morning Everyone
+Type the character position within the string:
+6
+The character found at 6 position is 'o'
+Type not empty string (q - to quit):
+I love cricket wholeheartedly
+Type the character position within the string:
+28
+The character found at 28 position is 'y'
+Type not empty string (q - to quit):
+I love cricket wholeheartedly
+Type the character position within the string:
+0
+The character found at 0 position is 'I'
+Type not empty string (q - to quit):
+Hello Friends
+Type the character position within the string:
+15
+Too big... Position reduced to max. available
+The character found at 12 position is 's'
+Type not empty string (q - to quit):
+Hello Friends
+Type the character position within the string:
+-1
+Too big... Position reduced to max. available
+The character found at 12 position is 's'
+Type not empty string (q - to quit):
+ashwdjcbdhgciudksbjeeeeeuwwwwwwwwwwwwwwwwwwwwwwwwwhhhhhhhhhhhhhhhscbxhcbusihdiubdshbxshxgcyusdgyddebcdhcbcb yrueevgybcbyuregfyeyufyucref
+Type the character position within the string:
+The character found at 0 position is 'a'
+Type not empty string (q - to quit):
+Type the character position within the string:
+23
+The character found at 23 position is 'e'
+Type not empty string (q - to quit):
+Q
+Type the character position within the string:
+0
+The character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+q
+*** End of Indexing Strings Demo ***

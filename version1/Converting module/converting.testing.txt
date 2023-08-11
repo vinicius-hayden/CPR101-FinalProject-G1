@@ -1,0 +1,51 @@
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit) :
+123
+Converted number is 123
+Type an int numeric string (q - to quit) :
+q
+*** End of Converting Strings to int Demo ***
+
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit) :
+abc
+Type an int numeric string (q - to quit) :
+123
+Converted number is 123
+Type an int numeric string (q - to quit) :
+q
+*** End of Converting Strings to int Demo ***
+
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit) :
+
+Type an int numeric string (q - to quit) :
+q
+*** End of Converting Strings to int Demo ***
+
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit) :
+-42
+Converted number is -42
+Type an int numeric string (q - to quit) :
+q
+*** End of Converting Strings to int Demo ***
+
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit) :
+123
+Converted number is 123
+Type an int numeric string (q - to quit) :
+q
+*** End of Converting Strings to int Demo ***
+
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit) :
+987
+Converted number is 987
+Type an int numeric string (q - to quit) :
+-56
+Converted number is -56
+Type an int numeric string (q - to quit) :
+q
+*** End of Converting Strings to int Demo ***

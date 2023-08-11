@@ -1,0 +1,60 @@
+TEST - 1
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+a b c !
+Word #1 is 'a'
+Word #2 is 'b'
+Word #3 is 'c'
+Word #4 is '!'
+Type a few words separated by space (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+TEST - 2
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+q w
+Word #1 is 'q'
+Word #2 is 'w'
+Type a few words separated by space (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+TEST - 3
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+s d 2
+Word #1 is 's'
+Word #2 is 'd'
+Word #3 is '2'
+Type a few words separated by space (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+TEST - 4
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+q q q
+Word #1 is 'q'
+*** End of Tokenizing Words Demo ***
+
+TEST - 5
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+abc123
+Word #1 is 'abc123'
+Type a few words separated by space (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+TEST - 6
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+a 2 $ b
+Word #1 is 'a'
+Word #2 is '2'
+Word #3 is '$'
+Word #4 is 'b'
+Type a few words separated by space (q - to quit):
+q
+*** End of Tokenizing Words Demo ***

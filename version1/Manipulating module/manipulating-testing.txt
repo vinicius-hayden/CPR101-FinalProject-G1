@@ -1,0 +1,54 @@
+TEST 1: Concatenation of two strings
+*** start of Concatenating strings Demo ***
+Type the 1st string (q - to quit):
+Fist string for concatenation test
+Type the 2nd string:
+Second string for concatenation test
+Concatenated string is 'Fist string for concatenation testSecond string for concatenation test'
+
+TEST 2: Quit command
+Type the 1st string (q - to quit):
+q
+*** End of Concatenating strings Demo ***
+
+TEST 3: Empty string handling
+*** start of Concatenating strings Demo ***
+Type the 1st string (q - to quit):
+
+Type the 2nd string:
+
+Concatenated string is ''
+
+TEST 4: Entering Only One String
+Type the 1st string (q - to quit):
+
+Type the 2nd string:
+This is the input for 2nd string
+Concatenated string is 'This is the input for 2nd string'
+
+TEST 5: Entering Invalid Characters
+Type the 1st string (q - to quit):
+This &*(()(% for @___ SPECIAL ==]\
+Type the 2nd string:
+INPUt \t\t test';;;\\\~
+Concatenated string is 'This &*(()(% for @___ SPECIAL ==]\INPUt \t\t test';;;\\\~'
+
+TEST 6: Unexpected newline handling
+Type the 1st string (q - to quit):
+New line handling testing\n
+Type the 2nd string:
+Check whether the program can handle this situation\n
+Concatenated string is 'New line handling testing\nCheck whether the program can handle this situation\n'
+
+TEST 7: Exceed buffer size limits (Overflow)
+Type the 1st string (q - to quit):
+This is to check whether the program can handle exceed buffer size limit
+Type the 2nd string:
+The buffer size limit for concatenated string is smaller that what I'm typing. so let's see what happens with this many characters
+Concatenated string is 'This is to check whether the program can handle exceed buffer size limitThe buffer size limit for concatenated string is smaller 
+that what I'm typing.'
+
+Type the 1st string (q - to quit):
+Type the 2nd string:
+
+Concatenated string is 'so let's see what happens with this many characters'

@@ -1,0 +1,35 @@
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+Converted number is 12345.000000
+*** End of Converting Strings to double demo ***
+
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+Converted number is -67.890000
+*** End of Converting Strings to double demo ***
+
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+Converted number is 0.000000
+*** End of Converting Strings to double demo ***
+
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+Invalid input. Please enter a valid numeric string or 'q' to quit.
+Type the double numeric string (q - to quit):
+*** End of Converting Strings to double demo ***
+
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+*** End of Converting Strings to double demo ***
+
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+Invalid input. Please enter a valid numeric string or 'q' to quit.
+Type the double numeric string (q - to quit):
+*** End of Converting Strings to double demo ***
+
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+Converted number is 123.456000
+*** End of Converting Strings to double demo ***

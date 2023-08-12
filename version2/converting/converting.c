@@ -41,18 +41,23 @@ printf("*** Start of Converting Strings to int Demo ***\n");
 >> insert here
 
 printf("*** Start of Converting Strings to double demo ***\n");
-char	doubleString[BUFFER_SIZE];
-double 	doubleNumber;
-do {
-	printf("Type the double numeric string (q - to quit):\n");
-	fgets(doubleString, BUFFER_SIZE, stdin)
-	doubleString[strlen(doubleString) -1] = '\0';
-	if ((strcmp(doubleString, "q") != 0)) {
-		doubleNumber = atof(doubleString);
-		printf("Converted number is %f", doubleNumber);
-	}
-} while (strcmp(doubleString, "q") != 0);
-printf("*** End of Converting Strings to double demo ***\n\n");
+
+char doubleString[BUFFER_SIZE];  // Declare an array to store user input
+ double doubleNumber;  // Declare a variable to store the converted number
+
+do {  // Start a do-while loop that will run at least once
+    printf("Type the double numeric string (q - to quit):\n");  // Prompt user for input
+    fgets(doubleString, BUFFER_SIZE, stdin);  // Read input from user (including newline)
+
+    doubleString[strlen(doubleString) - 1] = '\0';  // Remove newline character by replacing with null terminator
+
+    if (strcmp(doubleString, "q") != 0) {  // Check if input is not "q"
+        doubleNumber = atof(doubleString);  // Convert string to double using atof
+        printf("Converted number is %f\n", doubleNumber);  // Print the converted number
+    }
+} while (strcmp(doubleString, "q") != 0);  // Continue loop until user enters "q"
+
+printf("*** End of Converting Strings to double demo ***\n\n");  // Print end message
 
 
 /* Version 3 */

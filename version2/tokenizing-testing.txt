@@ -1,0 +1,59 @@
+TEST - 1
+*** Start of Tokenizing Words Demo ***
+Type a few phrases separated by comma (q - to quit):
+Hello,world,q
+Phrase #1 is 'Hello'
+Phrase #2 is 'world'
+
+
+TEST - 2
+*** Start of Tokenizing Words Demo ***
+Type a few phrases separated by comma (q - to quit):
+This,is,a,test,case,and,i,don't,think,it,will,work,let,us,check,what,you,people,say,haaa
+Phrase #1 is 'This'
+Phrase #2 is 'is'
+Phrase #3 is 'a'
+Phrase #4 is 'test'
+Phrase #5 is 'case'
+Phrase #6 is 'and'
+Phrase #7 is 'i'
+Phrase #8 is 'don't'
+Phrase #9 is 'think'
+Phrase #10 is 'it'
+Phrase #11 is 'will'
+Phrase #12 is 'work'
+Phrase #13 is 'let'
+Phrase #14 is 'us'
+Phrase #15 is 'check'
+Phrase #16 is 'what'
+Phrase #17 is 'you'
+Phrase #18 is 'people'
+Phrase #19 is 'say'
+Phrase #20 is 'haaa'
+
+
+TEST - 3
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+TEST - 4
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+One;Two;Three;Four
+Phrase #1 is 'One;Two;Three;Four'
+
+
+TEST - 5
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit): 
+
+
+TEST - 6
+*** Start of Tokenizing Words Demo ***
+Type a few words separated by space (q - to quit):
+    ,      ,          ,
+Phrase #1 is '    '
+Phrase #2 is '      '
+Phrase #3 is '          '

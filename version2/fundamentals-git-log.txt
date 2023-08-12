@@ -1,0 +1,35 @@
+$ git commit -m "v2"
+[master a74343e] v2
+ 1 file changed, 39 insertions(+), 26 deletions(-)
+
+sehga@Daisy MINGW64 ~/OneDrive/Desktop/CPR101/final project/finalproject (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        finalproject.sln
+        finalproject.vcxproj
+        finalproject.vcxproj.filters
+        finalproject.vcxproj.user
+        fundamentals.h
+        x64/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sehga@Daisy MINGW64 ~/OneDrive/Desktop/CPR101/final project/finalproject (master)
+$ git log
+commit a74343eb9bcbc0ad2e84a3695eaeaf0478db5df9 (HEAD -> master)
+Author: sehga <sehgalr1970@gmail.com>
+Date:   Mon Aug 7 18:41:30 2023 -0400
+
+    v2
+
+commit 4f3446148fca1097c463abac3af7215582d122af
+Author: sehga <sehgalr1970@gmail.com>
+Date:   Mon Aug 7 18:36:25 2023 -0400
+
+    v1
+
+sehga@Daisy MINGW64 ~/OneDrive/Desktop/CPR101/final project/finalproject (master)
+$

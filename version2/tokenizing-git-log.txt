@@ -1,0 +1,143 @@
+$ git log -p
+commit d86f22ee148efd70d1c8b70f45bfdc04219dc848 (HEAD -> master)
+Author: Ashwin B N <abharathan-nettoor@myseneca.ca>
+Date:   Fri Aug 11 13:42:38 2023 -0400
+
+    v2
+
+diff --git a/tokenizing.c b/tokenizing.c
+index 7d2afbb..5ea9d63 100644
+--- a/tokenizing.c
++++ b/tokenizing.c
+@@ -3,7 +3,7 @@
+ #define BUFFER_SIZE 300 //set the macro for BUFFER_SIZE as 300
+ #include "tokenizing.h" //this is to include tokenizing header file
+
+-/* V1
++// V1
+ void tokenizing(void) { //this is where the function defintion begins
+        printf("*** Start of Tokenizing Words Demo ***\n"); //this prints the message which is in the d
+ouble quotes
+        char words[BUFFER_SIZE]; // an array of type character 'words' has been declared of size 300
+@@ -25,7 +25,7 @@ void tokenizing(void) { //this is where the function defintion begins
+        } while (strcmp(words, "q") != 0); // Continue loop until input is 'q'
+
+        printf("*** End of Tokenizing Words Demo ***\n\n"); // Print end message
+-}*/
++}
+
+ // V2
+ void tokenizing(void) { // This is where function definition begins
+diff --git a/tokenizing.h b/tokenizing.h
+new file mode 100644
+index 0000000..fdca2ca
+--- /dev/null
++++ b/tokenizing.h
+@@ -0,0 +1,8 @@
++// TOKENIZING MODULE HEADER
++#ifndef _TOKENIZING_H_
++#define _TOKENIZING_H_
++
++#include <stdio.h> //this is to include the standard input output header file
++#include <string.h> //this is to include the string library
++void tokenizing(); //this is the function prototype for the function tokenizing
++#endif // !_TOKENIZING_H_
+\ No newline at end of file
+
+commit 8b999eef876711dd16837d4868a15404ea2ec125
+Author: Ashwin B N <abharathan-nettoor@myseneca.ca>
+Date:   Fri Aug 11 13:32:30 2023 -0400
+
+    v2
+
+diff --git a/tokenizing.c b/tokenizing.c
+new file mode 100644
+index 0000000..7d2afbb
+--- /dev/null
++++ b/tokenizing.c
+@@ -0,0 +1,75 @@
++// TOKENIZING MODULE SOURCE
++#define _CTR_SECURE_NO_WARNINGS
++#define BUFFER_SIZE 300 //set the macro for BUFFER_SIZE as 300
++#include "tokenizing.h" //this is to include tokenizing header file
++
++/* V1
++void tokenizing(void) { //this is where the function defintion begins
++       printf("*** Start of Tokenizing Words Demo ***\n"); //this prints the message which is in the d
+ouble quotes
++       char words[BUFFER_SIZE]; // an array of type character 'words' has been declared of size 300
++       char* nextWord = NULL; // a pointer of type char 'word' has been declared
++       int     wordsCounter; // an variable of type integer 'wordsCounter' has been declared
++       do {
++               printf("Type a few words seperated by space (q - to quit):\n"); // this prints the mess
+age to prompt the user to enter words seperated by spaces or q to quit
++               fgets(words, BUFFER_SIZE, stdin); // user input data
++               words[strlen(words) - 1] = '\0';
++               if (strcmp(words, "q") != 0) { // Check if input is not 'q'
++                       nextWord = strtok(words, " "); // Tokenize input string
++                       wordsCounter = 1; // Initialize word counter
++
++                       while (nextWord) { // Iterate through tokenized words
++                               printf("Word #%d is \'%s\'\n", wordsCounter++, nextWord); // Print word
+ and its count
++                               nextWord = strtok(NULL, " "); // Move to the next token
++                       }
++               }
++       } while (strcmp(words, "q") != 0); // Continue loop until input is 'q'
++
++       printf("*** End of Tokenizing Words Demo ***\n\n"); // Print end message
++}*/
++
++// V2
++void tokenizing(void) { // This is where function definition begins
++       printf("*** Start of Tokenizing Words Demo ***\n"); //this prints the message which is in the d
+ouble quotes
++       char phrases[BUFFER_SIZE]; // an array of type character 'phrases' has been declared of size 30
+0
++       char* nextPhrase = NULL; // a pointer of type char 'phrases' has been declared
++       int     phrasesCounter; // an variable of type integer 'phrasesCounter' has been declared to co
+unt number of phrases
++       do {
++               printf("Type a few phrases seperated by comma (q - to quit):\n"); // this prints the me
+ssage to prompt the user to enter words seperated by spaces or q to quit
++               fgets(phrases, BUFFER_SIZE, stdin); // Get user input data
++               phrases[strlen(phrases) - 1] = '\0'; // Remove the newline character with null terminat
+or at the end of string
++               if (strcmp(phrases, "q") != 0) { // Check if input is not 'q'
++                       char* context;
++                       nextPhrase = strtok_s(phrases, ",",&context); // Tokenize input string using co
+mma as delimiter
++                       phrasesCounter = 1; // Initialize phrase counter
++                       while (nextPhrase) { // Iterate through tokenized phrases
++                               printf("Phrase #%d is \'%s\'\n", phrasesCounter++, nextPhrase); // Prin
+t phrase and its count
++                               nextPhrase = strtok_s(NULL, ",", &context); // Move to the next token
++                       }
++               }
++       } while (strcmp(phrases, "q") != 0); // Continue loop until input is 'q'
++       printf("*** End of Tokenizing Words Demo ***\n\n"); // Print end message
++}
++
++
++
++/*V3
++void tokenizing(void) {
++       printf("*** Start of Tokenizing Words Demo ***\n");
++       char sentences[BUFFER_SIZE];
++       char* nextSentence = NULL;
++       int     sentencesCounter;
++       do {
++               printf("Type a few sentences seperated by space (q - to quit):\n");
++               fgets(sentences, BUFFER_SIZE, stdin);
++               sentences[strlen(sentences) - 1] = '\0';
++               if (strcmp(sentences, "q") != 0) {
++                       nextSentence = strtok(sentences, ".");
++                       sentencesCounter = 1;
++                       while (nextSentence) {
++                               printf("Word #%d is \'%s\'\n", sentencesCounter++, nextSentence);
++                               nextSentence = strtok(NULL, ".");
++                       }
++               }
++       } while (strcmp(sentences, "q") != 0);
++       printf("*** End of Tokenizing Words Demo ***\n\n");
++}*/

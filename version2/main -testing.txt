@@ -1,0 +1,300 @@
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+1
+*** Start of Indexing Strings Demo ***
+Type not empty string (q - to quit):
+Good morning Everyone
+Type the character position within the string:
+I love chicken wholeheartedly
+The character found at 0 position is 'G'
+Type not empty string (q - to quit):
+Type the character position within the string:
+28
+Too big... Position reduced to max. available
+The character found at 19 position is 'y'
+Type not empty string (q - to quit):
+I love cricket wholeheartedly
+Type the character position within the string:
+0
+The character found at 0 position is 'I'
+Type not empty string (q - to quit):
+Hello Friends
+Type the character position within the string:
+15
+Too big... Position reduced to max. available
+The character found at 12 position is 's'
+Type not empty string (q - to quit):
+Hello Friends
+Type the character position within the string:
+-1
+Too big... Position reduced to max. available
+The character found at 12 position is 's'
+Type not empty string (q - to quit):
+ashwdjcbdhgciudksbjeeeeeuwwwwwwwwwwwwwwwwwwwwwwwwwhhhhhhhhhhhhhhhscbxhcbusihdiubdshbxshxgcyusdgyddebcdhcbcb yrueevgybcbyuregfyeyufyucref
+Type the character position within the string:
+The character found at 0 position is 'a'
+Type not empty string (q - to quit):
+Type the character position within the string:
+23
+The character found at 23 position is 'e'
+Type not empty string (q - to quit):
+Q
+Type the character position within the string:
+0
+The character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+q
+*** End of Indexing Strings Demo ***
+
+*** Start of Measuring Strings Demo ***
+Type a string (q - to quit):
+Hello everyone
+The length of 'Hello everyone' is 14 characters
+Type a string (q - to quit):
+
+The length of '' is 0 characters
+Type a string (q - to quit):
+
+The length of '' is 0 characters
+Type a string (q - to quit):
+122554789663225879564213255355555555555555555555555555558888888888888888888555555555552222222222222222222222222222211111111111111111111111111111
+The length of '122554789663225879564213255355555555555555555555555555558888888888888888888555' is 78 characters
+Type a string (q - to quit):
+The length of '55555552222222222222222222222222222211111111111111111111111111111' is 65 characters
+Type a string (q - to quit):
+Q
+The length of 'Q' is 1 characters
+Type a string (q - to quit):
+q
+*** End of Measuring Strings Demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+2
+*** start of Concatenating strings Demo ***
+Type the 1st string (q - to quit):
+q
+*** End of Concatenating strings Demo ***
+
+*** start of Comparing strings Demo ***
+Type the 1st string to compare (q - to quit):
+
+Type the 2nd string to compare:
+
+'' string is equal to ''
+Type the 1st string to compare (q - to quit):
+This is the input for 2nd string
+Type the 2nd string to compare:
+This &*(()(% for @___ SPECIAL ==]\
+'This is the input for 2nd string' string is greater than 'This &*(()(% for @___ SPECIAL ==]\'
+Type the 1st string to compare (q - to quit):
+INPUt \t\t test';;;\\\~
+Type the 2nd string to compare:
+This &*(()(% for @___ SPECIAL ==]\
+'INPUt \t\t test';;;\\\~' string is less than 'This &*(()(% for @___ SPECIAL ==]\'
+Type the 1st string to compare (q - to quit):
+New line handling testing\n
+Type the 2nd string to compare:
+Check whether the program can handle this situation\n
+'New line handling testing\n' string is greater than 'Check whether the program can handle this situation\n'
+Type the 1st string to compare (q - to quit):
+This is to check whether the program can handle exceed buffer size limit
+Type the 2nd string to compare:
+The buffer size limit for concatenated string is smaller that what I'm typing. so let's see what happens with this many characters
+'This is to check whether the program can handle exceed buffer size limit' string is greater than 'The buffer size limit for concatenated string is smaller that what I'm typing.'
+Type the 1st string to compare (q - to quit):
+Type the 2nd string to compare:
+q
+'so let's see what happens with this many characters' string is greater than 'q'
+Type the 1st string to compare (q - to quit):
+hello
+Type the 2nd string to compare:
+hello
+'hello' string is equal to 'hello'
+Type the 1st string to compare (q - to quit):
+hello
+Type the 2nd string to compare:
+hello world
+'hello' string is less than 'hello world'
+Type the 1st string to compare (q - to quit):
+hello world
+Type the 2nd string to compare:
+hello
+'hello world' string is greater than 'hello'
+Type the 1st string to compare (q - to quit):
+
+Type the 2nd string to compare:
+
+'' string is equal to ''
+Type the 1st string to compare (q - to quit):
+\0
+Type the 2nd string to compare:
+'\0'
+'\0' string is greater than ''\0''
+Type the 1st string to compare (q - to quit):
+HELLO
+Type the 2nd string to compare:
+hello
+'HELLO' string is less than 'hello'
+Type the 1st string to compare (q - to quit):
+hello world, this is a vertion 2 testing. This time, we check whether the program can handle overflow case. Hope you are doing well.
+Type the 2nd string to compare:
+'hello world, this is a vertion 2 testing. This time, we check whether the prog' string is greater than 'am can handle overflow case. Hope you are doing well.'
+Type the 1st string to compare (q - to quit):
+'hello world, this is a vertion 2 testing. This time, we check whether the prog' string is greater than 'am can handle overflow case. Hope you are doing well.'
+Type the 2nd string to compare:
+''hello world, this is a vertion 2 testing. This time, we check whether the pro' string is greater than '' string is greater than 'am can handle overflow case. Hope you are doing well'
+Type the 1st string to compare (q - to quit):
+Type the 2nd string to compare:
+q
+''' string is less than 'q'
+Type the 1st string to compare (q - to quit):
+q
+*** End of Comparing strings Demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+3
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit) :
+123
+Converted number is 123
+Type an int numeric string (q - to quit) :
+q
+*** End of Converting Strings to int Demo ***
+
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+abc
+Converted number is 0.000000
+Type the double numeric string (q - to quit):
+123
+Converted number is 123.000000
+Type the double numeric string (q - to quit):
+q
+*** End of Converting Strings to double demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+3
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit) :
+-42
+Converted number is -42
+Type an int numeric string (q - to quit) :
+12.5
+Converted number is 12
+Type an int numeric string (q - to quit) :
+567979457546214321765765757957954796457647
+Converted number is 2147483647
+Type an int numeric string (q - to quit) :
+1w34t";0)+
+Converted number is 1
+Type an int numeric string (q - to quit) :
+12345
+Converted number is 12345
+Type an int numeric string (q - to quit) :
+-67.89
+Converted number is -67
+Type an int numeric string (q - to quit) :
+0
+Converted number is 0
+Type an int numeric string (q - to quit) :
+abc
+Converted number is 0
+Type an int numeric string (q - to quit) :
+q
+*** End of Converting Strings to int Demo ***
+
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+q
+*** End of Converting Strings to double demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+4
+*** Start of Tokenizing Words Demo ***
+Type a few phrases seperated by comma (q - to quit):
+Hello,world,q
+Phrase #1 is 'Hello'
+Phrase #2 is 'world'
+Phrase #3 is 'q'
+Type a few phrases seperated by comma (q - to quit):
+This,is,a,test,case,and,i,don't,think,it,will,work,let,us,check,what,you,people,say,haaa
+Phrase #1 is 'This'
+Phrase #2 is 'is'
+Phrase #3 is 'a'
+Phrase #4 is 'test'
+Phrase #5 is 'case'
+Phrase #6 is 'and'
+Phrase #7 is 'i'
+Phrase #8 is 'don't'
+Phrase #9 is 'think'
+Phrase #10 is 'it'
+Phrase #11 is 'will'
+Phrase #12 is 'work'
+Phrase #13 is 'let'
+Phrase #14 is 'us'
+Phrase #15 is 'check'
+Phrase #16 is 'what'
+Phrase #17 is 'you'
+Phrase #18 is 'people'
+Phrase #19 is 'say'
+Phrase #20 is 'haaa'
+Type a few phrases seperated by comma (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+4
+*** Start of Tokenizing Words Demo ***
+Type a few phrases seperated by comma (q - to quit):
+One;Two;Three;Four
+Phrase #1 is 'One;Two;Three;Four'
+Type a few phrases seperated by comma (q - to quit):
+
+Type a few phrases seperated by comma (q - to quit):
+    ,      ,          ,
+Phrase #1 is '    '
+Phrase #2 is '      '
+Phrase #3 is '          '
+Type a few phrases seperated by comma (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+0
+
+C:\Users\ETS7.36289828\Desktop\sem1\CPR101\mainn\x64\Debug\mainn.exe (process 14040) exited with code 0.
+Press any key to close this window . . .

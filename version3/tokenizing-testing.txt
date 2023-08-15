@@ -1,0 +1,41 @@
+*** Start of Tokenizing Words Demo ***
+
+TEST - 1
+Type a few sentences seperated by dot (q - to quit):
+Hello. This is a test. Bye.
+Word #1 is 'Hello'
+Word #2 is ' This is a test'
+Word #3 is ' Bye'
+
+
+TEST - 2
+Type a few sentences seperated by dot (q - to quit):
+
+
+TEST - 3
+Type a few sentences seperated by dot (q - to quit):
+Hello This is a test Bye
+Word #1 is 'Hello This is a test Bye'
+
+
+TEST - 4
+Type a few sentences seperated by dot (q - to quit):
+Hello.         This is a test.        Bye.
+Word #1 is 'Hello'
+Word #2 is '         This is a test'
+Word #3 is '        Bye'
+
+
+TEST - 5
+Type a few sentences seperated by dot (q - to quit):
+....
+
+
+TEST - 6
+Type a few sentences seperated by dot (q - to quit):
+Mr.Smith went to Washington, D.C. He enjoyed it.
+Word #1 is 'Mr'
+Word #2 is 'Smith went to Washington, D'
+Word #3 is 'C'
+Word #4 is ' He enjoyed it'
+Type a few sentences seperated by dot (q - to quit):

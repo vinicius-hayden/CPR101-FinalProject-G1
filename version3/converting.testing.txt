@@ -1,0 +1,20 @@
+den/Downloads/Project new code in 2224/" && gcc converting3.c -o converting3 && "/Users/viniciushayden/Downloads/Project new code in 2224/"converting3
+*** Start of Converting Strings to long demo ***
+Type the long numeric string (q - to quit):
+123456
+Converted number is 123456
+Type the long numeric string (q - to quit):
+-98765
+Converted number is -98765
+Type the long numeric string (q - to quit):
+00001234
+Converted number is 1234
+Type the long numeric string (q - to quit):
+abc123
+Converted number is 0
+Type the long numeric string (q - to quit):
+
+Converted number is 0
+Type the long numeric string (q - to quit):
+q
+*** End of Converting Strings to long Demo ***

@@ -1,0 +1,34 @@
+*** Start of Copying Strings Demo ***
+Destination string is reset to empty
+Type the source string (q - to quit):
+Hiii there
+New destination string is 'Hiii there'
+Destination string is reset to empty
+Type the source string (q - to quit):
+
+New destination string is ''
+Destination string is reset to empty
+Type the source string (q - to quit):
+I like watching cricket just because of virat kohli because he inspires me alot.
+New destination string is 'I like watching cricket just because of virat kohli because he inspires me alo'
+Destination string is reset to empty
+Type the source string (q - to quit):
+New destination string is '.'
+Destination string is reset to empty
+Type the source string (q - to quit):
+I like virat kohli because he inspires me alot. Everytime I watch him play his aggression ignites a sense of excitement and spark in all the young individuals watching him play.
+New destination string is 'I like virat kohli because he inspires me alot. Everytime I watch him play his'
+Destination string is reset to empty
+Type the source string (q - to quit):
+New destination string is 'aggression ignites a sense of excitement and spark in all the young individual'
+Destination string is reset to empty
+Type the source string (q - to quit):
+New destination string is ' watching him play.'
+Destination string is reset to empty
+Type the source string (q - to quit):
+Q
+New destination string is 'Q'
+Destination string is reset to empty
+Type the source string (q - to quit):
+q
+*** End of copying Strings Demo ***

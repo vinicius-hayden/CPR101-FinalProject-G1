@@ -1,0 +1,34 @@
+*** start of Searching strings Demo ***
+Type the string (q - to quit) :
+Hello, how are you?
+Type the substring:
+how
+'how' found at 7 position
+
+Type the string (q - to quit) :
+hello, there is a quick question
+Type the substring:
+q
+'q' found at 18 position
+Type the string (q - to quit) :
+I like apple better than orange
+Type the substring:
+grape
+Not found
+Type the string (q - to quit) :
+
+Type the substring:
+
+'' found at 0 position
+Type the string (q - to quit) :
+hello, there, how are you? I like your shirt. It looks cute. The pink colour really suits you. You must like the colour.
+Type the substring:
+Not found
+Type the string (q - to quit) :
+\0
+Type the substring:
+\0
+'\0' found at 0 position
+Type the string (q - to quit) :
+q
+*** End of Searching strings Demo ***

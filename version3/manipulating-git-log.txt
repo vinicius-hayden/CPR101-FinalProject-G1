@@ -1,0 +1,436 @@
+commit a342f97694f316983e716187216acded233048ae
+Author: Misato Yoshimoto <myoshimoto@myseneca.ca>
+Date:   Sun Aug 13 21:34:45 2023 -0400
+
+    v3
+
+diff --git a/manipulating.c b/manipulating.c
+index 43257a9..471be98 100644
+--- a/manipulating.c
++++ b/manipulating.c
+@@ -6,7 +6,7 @@
+ 
+ void manipulating(void) //Functions for string manipulation demonstrations.
+ {
+-	/*
++	
+ 
+ 	printf("*** start of Concatenating strings Demo ***\n");
+ 	char string1[BUFFER_SIZE]; // define two character strings which hold user inputs
+@@ -32,11 +32,9 @@ void manipulating(void) //Functions for string manipulation demonstrations.
+ 	printf("*** End of Concatenating strings Demo ***\n\n");
+ 
+ 
+-*/
+ 
+-/* Version 2
+ 
+-/*
++// Version 2
+ 
+ 
+ 
+@@ -73,10 +71,10 @@ void manipulating(void) //Functions for string manipulation demonstrations.
+ 	printf("*** End of Comparing strings Demo ***\n\n");
+ 
+ 
+-*/
+ 
+ 
+-/* Version 3 */
++
++//Version 3 
+ 
+ 	printf("*** start of Searching strings Demo ***\n");
+ 	char haystack[BUFFER_SIZE]; // define two character strings which hold user inputs
+
+commit 0b58bf4e8fc50da4129e18c86a796f6f66ace13a
+Author: Misato Yoshimoto <myoshimoto@myseneca.ca>
+Date:   Sun Aug 13 21:30:36 2023 -0400
+
+    v3
+
+diff --git a/manipulating.c b/manipulating.c
+index 363fd1e..43257a9 100644
+--- a/manipulating.c
++++ b/manipulating.c
+@@ -1,23 +1,25 @@
+ // MANIPULATING SOURCE
+-/*
+-#define _CRT_SECURE_NO_WARNINGS 
++#define _CRT_SECURE_NO_WARNINGS
+ #define BUFFER_SIZE 80 //set the macro for BUFFER_SIZE as 80
+ #include "manipulating.h" //include header file to point libraries and funciton header.
+ 
++
+ void manipulating(void) //Functions for string manipulation demonstrations.
+ {
++	/*
++
+ 	printf("*** start of Concatenating strings Demo ***\n");
+ 	char string1[BUFFER_SIZE]; // define two character strings which hold user inputs
+-	char string2[BUFFER_SIZE]; 
++	char string2[BUFFER_SIZE];
+ 
+ 	do {
+ 		// start a do-while loop to repeat the below code blocks until user enters q to quit.
+ 		printf("Type the 1st string (q - to quit):\n");
+-		fgets(string1, BUFFER_SIZE, stdin);//Read the user input which has the max memory of BUFFER_SIZE. 
++		fgets(string1, BUFFER_SIZE, stdin);//Read the user input which has the max memory of BUFFER_SIZE.
+ 											//and store the user input to string1 variable.
+ 		string1[strlen(string1) - 1] = '\0'; //remove the new line character from string1.
+ 
+-		if ((strcmp(string1, "q") != 0)) { //compare if the stored value of string1 and "q" and check If they are not the same. 
++		if ((strcmp(string1, "q") != 0)) { //compare if the stored value of string1 and "q" and check If they are not the same.
+ 											// if they are not equal, move to the below if block of codes.
+ 			printf("Type the 2nd string: \n");
+ 			fgets(string2, BUFFER_SIZE, stdin); //Read the user input which has the max memory of BUFFER_SIZE
+@@ -29,12 +31,15 @@ void manipulating(void) //Functions for string manipulation demonstrations.
+ 	} while (strcmp(string1, "q") != 0); //set the condtion for while. If user enter "q" in string1 variable, exit the do-while loop.
+ 	printf("*** End of Concatenating strings Demo ***\n\n");
+ 
+-}
++
+ */
+ 
+-	/* Version 2 */
+-	
+-	
++/* Version 2
++
++/*
++
++
++
+ 	printf("*** start of Comparing strings Demo ***\n");
+ 	char compare1[BUFFER_SIZE]; // define two character strings which hold user inputs
+ 	char compare2[BUFFER_SIZE]; //they have the array size of BUFFER_SIZE, which is set as 80 in macro
+@@ -42,56 +47,61 @@ void manipulating(void) //Functions for string manipulation demonstrations.
+ 	int result; // set variable result as integer
+ 	do {
+ 		// start a do-while loop to repeat the below code blocks until user enters q to quit.
+-		printf("Type the 1st string to compare (q - to quit): \n"); 
+-		fgets(compare1, BUFFER_SIZE, stdin);//Read the user input which has the max memory of BUFFER_SIZE. 
+-											//and store the user input to compare1 variable.
++		printf("Type the 1st string to compare (q - to quit): \n");
++		fgets(compare1, BUFFER_SIZE, stdin);//Read the user input which has the max memory of BUFFER_SIZE.
++		//and store the user input to compare1 variable.
+ 		compare1[strlen(compare1) - 1] = '\0'; //remove the new line character from compare1.
+-		if (strcmp(compare1, "q") != 0) { //compare if the stored value of compare1 and "q" and check If they are not the same. 
+-				printf("Type the 2nd string to compare:\n");
+-				fgets(compare2, BUFFER_SIZE, stdin); // Read the user input which has the max memory of BUFFER_SIZE.
+-													//and store the user input to compare2 variable.
+-				compare2[strlen(compare2) - 1] = '\0';//remove the new line character from compare2.
+-
+-				result = strcmp(compare1, compare2); //compare the data store in compare1 and compare2 varialbes and 
+-														// assign the result to result variable
+-				if (result < 0) // check if the data stored in result variable is less than 0 which compare1 has less data than compare2. 
+-								// if so, print the following message while passign the right variable of compare1 and compare2.
+-					printf("\'%s\' string is less than \'%s\'\n", compare1, compare2);
+-				else if (result == 0) // check if the data stored in the result variable is equal to 0, which compare1 and compare2 value matches together.
+-									// if so, then print the following message while passing the right variable of compare1 and compare2.
+-					printf("\'%s\' string is equal to \'%s\' \n", compare1, compare2);
+-				else //If other than the above IF condition, the following message is displayed.
+-					printf("\'%s\' string is greater than \'%s\' \n", compare1, compare2);
+-			}
+-
+-	}while(strcmp(compare1, "q") != 0);//set the condtion for while. If user enter "q" in compare1 variable, exit the do-while loop.
+-		printf("*** End of Comparing strings Demo ***\n\n");
+-	
+-	
+-
+-
+-		/* Version 3 */
+-		/*
+-		printf("*** start of Searching strings Demo ***\n");
+-	char haystack[BUFFER_SIZE];
+-	char needle[BUFFER_SIZE];
+-	char* occurrence = NULL;
++		if (strcmp(compare1, "q") != 0) { //compare if the stored value of compare1 and "q" and check If they are not the same.
++			printf("Type the 2nd string to compare:\n");
++			fgets(compare2, BUFFER_SIZE, stdin); // Read the user input which has the max memory of BUFFER_SIZE.
++			//and store the user input to compare2 variable.
++			compare2[strlen(compare2) - 1] = '\0';//remove the new line character from compare2.
++
++			result = strcmp(compare1, compare2); //compare the data store in compare1 and compare2 varialbes and
++			// assign the result to result variable
++			if (result < 0) // check if the data stored in result variable is less than 0 which compare1 has less data than compare2.
++				// if so, print the following message while passign the right variable of compare1 and compare2.
++				printf("\'%s\' string is less than \'%s\'\n", compare1, compare2);
++			else if (result == 0) // check if the data stored in the result variable is equal to 0, which compare1 and compare2 value matches together.
++				// if so, then print the following message while passing the right variable of compare1 and compare2.
++				printf("\'%s\' string is equal to \'%s\' \n", compare1, compare2);
++			else //If other than the above IF condition, the following message is displayed.
++				printf("\'%s\' string is greater than \'%s\' \n", compare1, compare2);
++		}
++
++	} while (strcmp(compare1, "q") != 0);//set the condtion for while. If user enter "q" in compare1 variable, exit the do-while loop.
++	printf("*** End of Comparing strings Demo ***\n\n");
++
++
++*/
++
++
++/* Version 3 */
++
++	printf("*** start of Searching strings Demo ***\n");
++	char haystack[BUFFER_SIZE]; // define two character strings which hold user inputs
++	char needle[BUFFER_SIZE];  //they have the array size of BUFFER_SIZE, which is set as 80 in macro
++	char* occurrence = NULL; //define occurrence as char pointer and initialize it as NULL
+ 	do {
++		// start a do-while loop to repeat the below code blocks until user enters q to quit.
+ 		printf("Type the string (q - to quit) :\n");
+-		fgets(haystack, BUFFER_SIZE, stdin);
+-		haystack[strlen(haystack) - 1] = '\0';
+-		if (strcmp(haystack, "q") != 0) {
++		fgets(haystack, BUFFER_SIZE, stdin); //Read the user input which has the max memory of BUFFER_SIZE. 
++		//and store the user input to haystack variable.
++		haystack[strlen(haystack) - 1] = '\0'; //remove the new line character from haystack.
++		if (strcmp(haystack, "q") != 0) { //compare if the stored value of haystack and "q" and check If they are not the same. 
+ 			printf("Type the substring:\n");
+-			fgets(needle, BUFFER_SIZE, stdin);
+-			needle[strlen(needle) - 1] = '\0';
+-			occurrence = strstr(haystack, needle);
+-			if (occurrence)
+-				printf("\'%s\' found at %ct position\n", needle,
+-						(int)(occurrence - haystack));
++			fgets(needle, BUFFER_SIZE, stdin); // Read the user input which has the max memory of BUFFER_SIZE.
++			//and store the user input to needle variable.
++			needle[strlen(needle) - 1] = '\0'; // remove the new line character from needle.
++			occurrence = strstr(haystack, needle); //search for the first occurrence of needle within haystack and 
++			// store the rusult in occurrence.
++			if (occurrence) // check if the data stored in occurrence is not NULL, if not then proceed to the below code.
++				printf("\'%s\' found at %d position\n", needle,
++					(long)(occurrence - haystack)); // print the position of needle within haystack
+ 			else
+ 				printf("Not found\n");
+-		)
+-] while (strcmp(haystack, "q") != 0);
+-				printf("*** End of Searching strings Demo ***\n\n");
+-		*/
+-	
+\ No newline at end of file
++		}
++	} while (strcmp(haystack, "q") != 0);
++	//set the condtion for while. If user enter "q" in compare1 variable, exit the do-while loop.
++	printf("*** End of Searching strings Demo ***\n\n");
++}
+\ No newline at end of file
+
+commit 399ab6393c54ad10aebfebee0f63f1ec0ee7b64b
+Author: Misato Yoshimoto <myoshimoto@myseneca.ca>
+Date:   Sun Aug 13 21:17:09 2023 -0400
+
+    v3
+
+diff --git a/manipulating.h b/manipulating.h
+new file mode 100644
+index 0000000..07b1ac8
+--- /dev/null
++++ b/manipulating.h
+@@ -0,0 +1,8 @@
++#pragma once
++//MANIPULATING MODULE HEADER
++#ifndef _MANIPULATING_H_
++#define _MANIPULATING_H_
++#include <stdio.h>
++#include <string.h>
++void manipulating(void);
++#endif 
+
+commit d03f626ac1884f537fdc4315eff2c96644561435
+Author: Misato Yoshimoto <myoshimoto@myseneca.ca>
+Date:   Fri Aug 11 10:52:04 2023 -0400
+
+    v2
+
+diff --git a/manipulating.c b/manipulating.c
+index bf88aea..363fd1e 100644
+--- a/manipulating.c
++++ b/manipulating.c
+@@ -1,5 +1,5 @@
+ // MANIPULATING SOURCE
+-
++/*
+ #define _CRT_SECURE_NO_WARNINGS 
+ #define BUFFER_SIZE 80 //set the macro for BUFFER_SIZE as 80
+ #include "manipulating.h" //include header file to point libraries and funciton header.
+@@ -30,6 +30,7 @@ void manipulating(void) //Functions for string manipulation demonstrations.
+ 	printf("*** End of Concatenating strings Demo ***\n\n");
+ 
+ }
++*/
+ 
+ 	/* Version 2 */
+ 	
+
+commit cb95d052464cec158d3720de9c921c53ff37f157
+Author: Misato Yoshimoto <myoshimoto@myseneca.ca>
+Date:   Wed Aug 9 17:15:17 2023 -0400
+
+    v2
+
+diff --git a/manipulating.c b/manipulating.c
+index c4b3a68..bf88aea 100644
+--- a/manipulating.c
++++ b/manipulating.c
+@@ -32,34 +32,41 @@ void manipulating(void) //Functions for string manipulation demonstrations.
+ }
+ 
+ 	/* Version 2 */
+-	/*
++	
+ 	
+ 	printf("*** start of Comparing strings Demo ***\n");
+-	char compare1[BUFFER_SIZE];
+-	char compare2[BUFFER_SIZE];
++	char compare1[BUFFER_SIZE]; // define two character strings which hold user inputs
++	char compare2[BUFFER_SIZE]; //they have the array size of BUFFER_SIZE, which is set as 80 in macro
+ 
+-	int result;
++	int result; // set variable result as integer
+ 	do {
++		// start a do-while loop to repeat the below code blocks until user enters q to quit.
+ 		printf("Type the 1st string to compare (q - to quit): \n"); 
+-		fgets(compare1, BUFFER_SIZE, stdin);
+-		compare1[strlen(compare1) - 1] = '\0';
+-		if (strcmp(compare1, "q") != 0) {
++		fgets(compare1, BUFFER_SIZE, stdin);//Read the user input which has the max memory of BUFFER_SIZE. 
++											//and store the user input to compare1 variable.
++		compare1[strlen(compare1) - 1] = '\0'; //remove the new line character from compare1.
++		if (strcmp(compare1, "q") != 0) { //compare if the stored value of compare1 and "q" and check If they are not the same. 
+ 				printf("Type the 2nd string to compare:\n");
+-				fgets(compare2, BUFFER_SIZE, stdin);
+-				compare2[strlen(compare2) - 1] = '\0';
+-				result = strcmp(compare1, compare2);
+-				if (result < 0)
++				fgets(compare2, BUFFER_SIZE, stdin); // Read the user input which has the max memory of BUFFER_SIZE.
++													//and store the user input to compare2 variable.
++				compare2[strlen(compare2) - 1] = '\0';//remove the new line character from compare2.
++
++				result = strcmp(compare1, compare2); //compare the data store in compare1 and compare2 varialbes and 
++														// assign the result to result variable
++				if (result < 0) // check if the data stored in result variable is less than 0 which compare1 has less data than compare2. 
++								// if so, print the following message while passign the right variable of compare1 and compare2.
+ 					printf("\'%s\' string is less than \'%s\'\n", compare1, compare2);
+-				else if (result == 0)
++				else if (result == 0) // check if the data stored in the result variable is equal to 0, which compare1 and compare2 value matches together.
++									// if so, then print the following message while passing the right variable of compare1 and compare2.
+ 					printf("\'%s\' string is equal to \'%s\' \n", compare1, compare2);
+-				else
++				else //If other than the above IF condition, the following message is displayed.
+ 					printf("\'%s\' string is greater than \'%s\' \n", compare1, compare2);
+ 			}
+ 
+-	}while(strcmp(compare1, "q") != 0);
++	}while(strcmp(compare1, "q") != 0);//set the condtion for while. If user enter "q" in compare1 variable, exit the do-while loop.
+ 		printf("*** End of Comparing strings Demo ***\n\n");
+ 	
+-	*/
++	
+ 
+ 
+ 		/* Version 3 */
+
+commit f6af1782d8889f1ea43a701fa4e06143a1d8f40f
+Author: Misato Yoshimoto <myoshimoto@myseneca.ca>
+Date:   Wed Aug 9 16:51:39 2023 -0400
+
+    v1
+
+diff --git a/manipulating.c b/manipulating.c
+new file mode 100644
+index 0000000..c4b3a68
+--- /dev/null
++++ b/manipulating.c
+@@ -0,0 +1,89 @@
++// MANIPULATING SOURCE
++
++#define _CRT_SECURE_NO_WARNINGS 
++#define BUFFER_SIZE 80 //set the macro for BUFFER_SIZE as 80
++#include "manipulating.h" //include header file to point libraries and funciton header.
++
++void manipulating(void) //Functions for string manipulation demonstrations.
++{
++	printf("*** start of Concatenating strings Demo ***\n");
++	char string1[BUFFER_SIZE]; // define two character strings which hold user inputs
++	char string2[BUFFER_SIZE]; 
++
++	do {
++		// start a do-while loop to repeat the below code blocks until user enters q to quit.
++		printf("Type the 1st string (q - to quit):\n");
++		fgets(string1, BUFFER_SIZE, stdin);//Read the user input which has the max memory of BUFFER_SIZE. 
++											//and store the user input to string1 variable.
++		string1[strlen(string1) - 1] = '\0'; //remove the new line character from string1.
++
++		if ((strcmp(string1, "q") != 0)) { //compare if the stored value of string1 and "q" and check If they are not the same. 
++											// if they are not equal, move to the below if block of codes.
++			printf("Type the 2nd string: \n");
++			fgets(string2, BUFFER_SIZE, stdin); //Read the user input which has the max memory of BUFFER_SIZE
++												// Store the user input ot string2 variable.
++			string2[strlen(string2) - 1] = '\0';//remove the new line character from string2.
++			strcat(string1, string2); // Concatenate string2 at the end of string1
++			printf("Concatenated string is \'%s\' \n", string1);
++		}
++	} while (strcmp(string1, "q") != 0); //set the condtion for while. If user enter "q" in string1 variable, exit the do-while loop.
++	printf("*** End of Concatenating strings Demo ***\n\n");
++
++}
++
++	/* Version 2 */
++	/*
++	
++	printf("*** start of Comparing strings Demo ***\n");
++	char compare1[BUFFER_SIZE];
++	char compare2[BUFFER_SIZE];
++
++	int result;
++	do {
++		printf("Type the 1st string to compare (q - to quit): \n"); 
++		fgets(compare1, BUFFER_SIZE, stdin);
++		compare1[strlen(compare1) - 1] = '\0';
++		if (strcmp(compare1, "q") != 0) {
++				printf("Type the 2nd string to compare:\n");
++				fgets(compare2, BUFFER_SIZE, stdin);
++				compare2[strlen(compare2) - 1] = '\0';
++				result = strcmp(compare1, compare2);
++				if (result < 0)
++					printf("\'%s\' string is less than \'%s\'\n", compare1, compare2);
++				else if (result == 0)
++					printf("\'%s\' string is equal to \'%s\' \n", compare1, compare2);
++				else
++					printf("\'%s\' string is greater than \'%s\' \n", compare1, compare2);
++			}
++
++	}while(strcmp(compare1, "q") != 0);
++		printf("*** End of Comparing strings Demo ***\n\n");
++	
++	*/
++
++
++		/* Version 3 */
++		/*
++		printf("*** start of Searching strings Demo ***\n");
++	char haystack[BUFFER_SIZE];
++	char needle[BUFFER_SIZE];
++	char* occurrence = NULL;
++	do {
++		printf("Type the string (q - to quit) :\n");
++		fgets(haystack, BUFFER_SIZE, stdin);
++		haystack[strlen(haystack) - 1] = '\0';
++		if (strcmp(haystack, "q") != 0) {
++			printf("Type the substring:\n");
++			fgets(needle, BUFFER_SIZE, stdin);
++			needle[strlen(needle) - 1] = '\0';
++			occurrence = strstr(haystack, needle);
++			if (occurrence)
++				printf("\'%s\' found at %ct position\n", needle,
++						(int)(occurrence - haystack));
++			else
++				printf("Not found\n");
++		)
++] while (strcmp(haystack, "q") != 0);
++				printf("*** End of Searching strings Demo ***\n\n");
++		*/
++	
+\ No newline at end of file

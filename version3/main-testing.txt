@@ -1,0 +1,421 @@
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+1
+*** Start of Indexing Strings Demo ***
+Type not empty string (q - to quit):
+Good Morning Everyone
+Type the character position within the string:
+6
+The character found at 6 position is 'o'
+Type not empty string (q - to quit):
+I love cricket wholeheartedly
+Type the character position within the string:
+28
+The character found at 28 position is 'y'
+Type not empty string (q - to quit):
+I love cricket wholeheartedly
+Type the character position within the string:
+0
+The character found at 0 position is 'I'
+Type not empty string (q - to quit):
+Hello Friends
+Type the character position within the string:
+15
+Too big... Position reduced to max. available
+The character found at 12 position is 's'
+Type not empty string (q - to quit):
+Hello Friends
+Type the character position within the string:
+15
+Too big... Position reduced to max. available
+The character found at 12 position is 's'
+Type not empty string (q - to quit):
+Hello Friends
+Type the character position within the string:
+-1
+Too big... Position reduced to max. available
+The character found at 12 position is 's'
+Type not empty string (q - to quit):
+ashwdjcbdhgciudksbjeeeeeuwwwwwwwwwwwwwwwwwwwwwwwwwhhhhhhhhhhhhhhhscbxhcbusihdiubdshbxshxgcyusdgyddebcdhcbcb yrueevgybcbyuregfyeyufyucref
+Type the character position within the string:
+The character found at 0 position is 'a'
+Type not empty string (q - to quit):
+Type the character position within the string:
+23
+The character found at 23 position is 'e'
+Type not empty string (q - to quit):
+Q
+Type the character position within the string:
+0
+The character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+q
+*** End of Indexing Strings Demo ***
+
+*** Start of Measuring Strings Demo ***
+Type a string (q - to quit):
+Hello everyone
+The length of 'Hello everyone' is 14 characters
+Type a string (q - to quit):
+
+The length of '' is 0 characters
+Type a string (q - to quit):
+
+The length of '' is 0 characters
+Type a string (q - to quit):
+122554789663225879564213255355555555555555555555555555558888888888888888888555555555552222222222222222222222222222211111111111111111111111111111
+The length of '122554789663225879564213255355555555555555555555555555558888888888888888888555' is 78 characters
+Type a string (q - to quit):
+The length of '55555552222222222222222222222222222211111111111111111111111111111' is 65 characters
+Type a string (q - to quit):
+Q
+The length of 'Q' is 1 characters
+Type a string (q - to quit):
+q
+*** End of Measuring Strings Demo ***
+
+*** Start of Copying Strings Demo ***
+Destination string is reset to empty
+Type the source string (q - to quit):
+Hiii there
+New destination string is 'Hiii there'
+Destination string is reset to empty
+Type the source string (q - to quit):
+
+New destination string is ''
+Destination string is reset to empty
+Type the source string (q - to quit):
+I like watching cricket just because of virat kohli because he inspires me alot.
+New destination string is 'I like watching cricket just because of virat kohli because he inspires me alo'
+Destination string is reset to empty
+Type the source string (q - to quit):
+New destination string is '.'
+Destination string is reset to empty
+Type the source string (q - to quit):
+I like virat kohli because he inspires me alot. Everytime I watch him play his aggression ignites a sense of excitement and spark in all the young individuals watching him play.
+New destination string is 'I like virat kohli because he inspires me alot. Everytime I watch him play his'
+Destination string is reset to empty
+Type the source string (q - to quit):
+New destination string is 'aggression ignites a sense of excitement and spark in all the young individual'
+Destination string is reset to empty
+Type the source string (q - to quit):
+New destination string is ' watching him play.'
+Destination string is reset to empty
+Type the source string (q - to quit):
+Q
+New destination string is 'Q'
+Destination string is reset to empty
+Type the source string (q - to quit):
+q
+*** End of copying Strings Demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+2
+*** start of Concatenating strings Demo ***
+Type the 1st string (q - to quit):
+
+Type the 2nd string:
+
+Concatenated string is ''
+Type the 1st string (q - to quit):
+
+Type the 2nd string:
+This is the input for 2nd string
+Concatenated string is 'This is the input for 2nd string'
+Type the 1st string (q - to quit):
+This &*(()(% for @___ SPECIAL ==]\
+Type the 2nd string:
+INPUt \t\t test';;;\\\~
+Concatenated string is 'This &*(()(% for @___ SPECIAL ==]\INPUt \t\t test';;;\\\~'
+Type the 1st string (q - to quit):
+New line handling testing\n
+Type the 2nd string:
+Check whether the program can handle this situation\n
+Concatenated string is 'New line handling testing\nCheck whether the program can handle this situation\n'
+Type the 1st string (q - to quit):
+This is to check whether the program can handle exceed buffer size limit
+Type the 2nd string:
+The buffer size limit for concatenated string is smaller that what I'm typing. so let's see what happens with this many characters
+Concatenated string is 'This is to check whether the program can handle exceed buffer size limitThe buffer size limit for concatenated string is smaller that what I'm typing.'
+Type the 1st string (q - to quit):
+Type the 2nd string:
+q
+Concatenated string is 'so let's see what happens with this many charactersq'
+Type the 1st string (q - to quit):
+q
+*** End of Concatenating strings Demo ***
+
+*** start of Comparing strings Demo ***
+Type the 1st string to compare (q - to quit):
+hello
+Type the 2nd string to compare:
+hello
+'hello' string is equal to 'hello'
+Type the 1st string to compare (q - to quit):
+hello
+Type the 2nd string to compare:
+hello world
+'hello' string is less than 'hello world'
+Type the 1st string to compare (q - to quit):
+hello world
+Type the 2nd string to compare:
+hello
+'hello world' string is greater than 'hello'
+Type the 1st string to compare (q - to quit):
+
+Type the 2nd string to compare:
+
+'' string is equal to ''
+Type the 1st string to compare (q - to quit):
+\0
+Type the 2nd string to compare:
+'\0'
+'\0' string is greater than ''\0''
+Type the 1st string to compare (q - to quit):
+HELLO
+Type the 2nd string to compare:
+hello
+'HELLO' string is less than 'hello'
+Type the 1st string to compare (q - to quit):
+q
+*** End of Comparing strings Demo ***
+
+*** start of Searching strings Demo ***
+Type the string (q - to quit) :
+Hello, how are you?
+Type the substring:
+how
+'how' found at 7 position
+Type the string (q - to quit) :
+hello, there is a quick question
+Type the substring:
+q
+'q' found at 18 position
+Type the string (q - to quit) :
+I like apple better than orange
+Type the substring:
+grape
+Not found
+Type the string (q - to quit) :
+
+Type the substring:
+
+'' found at 0 position
+Type the string (q - to quit) :
+hello, there, how are you? I like your shirt. It looks cute. The pink colour really suits you. You must like the colour.
+Type the substring:
+Not found
+Type the string (q - to quit) :
+\0
+Type the substring:
+\0
+'\0' found at 0 position
+Type the string (q - to quit) :
+q
+*** End of Searching strings Demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+3
+*** Start of Converting Strings to int Demo ***
+Type an int numeric string (q - to quit) :
+123
+Converted number is 123
+Type an int numeric string (q - to quit) :
+abc
+Converted number is 0
+Type an int numeric string (q - to quit) :
+123
+Converted number is 123
+Type an int numeric string (q - to quit) :
+
+Converted number is 0
+Type an int numeric string (q - to quit) :
+-42
+Converted number is -42
+Type an int numeric string (q - to quit) :
+987
+Converted number is 987
+Type an int numeric string (q - to quit) :
+-56
+Converted number is -56
+Type an int numeric string (q - to quit) :
+12.5
+Converted number is 12
+Type an int numeric string (q - to quit) :
+18656546854899897892987
+Converted number is 2147483647
+Type an int numeric string (q - to quit) :
+q
+*** End of Converting Strings to int Demo ***
+
+*** Start of Converting Strings to double demo ***
+Type the double numeric string (q - to quit):
+12345
+Converted number is 12345.000000
+Type the double numeric string (q - to quit):
+-67.89
+Converted number is -67.890000
+Type the double numeric string (q - to quit):
+0
+Converted number is 0.000000
+Type the double numeric string (q - to quit):
+abc
+Converted number is 0.000000
+Type the double numeric string (q - to quit):
+q
+*** End of Converting Strings to double demo ***
+
+*** Start of Converting Strings to long demo ***
+Type the long numeric string (q - to quit):
+123456
+Converted number is 123456
+Type the long numeric string (q - to quit):
+-98765
+Converted number is -98765
+Type the long numeric string (q - to quit):
+00001234
+Converted number is 1234
+Type the long numeric string (q - to quit):
+abc123
+Converted number is 0
+Type the long numeric string (q - to quit):
+
+Converted number is 0
+Type the long numeric string (q - to quit):
+q
+*** End of Converting Strings to long Demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+4
+*** Start of Tokenizing Words Demo ***
+Type a few sentences seperated by dot (q - to quit):
+a b c !
+Word #1 is 'a b c !'
+Type a few sentences seperated by dot (q - to quit):
+q w
+Word #1 is 'q w'
+Type a few sentences seperated by dot (q - to quit):
+s d 2
+Word #1 is 's d 2'
+Type a few sentences seperated by dot (q - to quit):
+q q q
+Word #1 is 'q q q'
+Type a few sentences seperated by dot (q - to quit):
+abc123
+Word #1 is 'abc123'
+Type a few sentences seperated by dot (q - to quit):
+a 2 $ b
+Word #1 is 'a 2 $ b'
+Type a few sentences seperated by dot (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+4
+*** Start of Tokenizing Words Demo ***
+Type a few words seperated by space (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+*** Start of Tokenizing Phrases Demo ***
+Type a few phrases seperated by comma (q - to quit):
+Hello,world,q
+Phrase #1 is 'Hello'
+Phrase #2 is 'world'
+Phrase #3 is 'q'
+Type a few phrases seperated by comma (q - to quit):
+This,is,a,test,case,and,i,don't,think,it,will,work,let,us,check,what,you,people,say,haaa
+Phrase #1 is 'This'
+Phrase #2 is 'is'
+Phrase #3 is 'a'
+Phrase #4 is 'test'
+Phrase #5 is 'case'
+Phrase #6 is 'and'
+Phrase #7 is 'i'
+Phrase #8 is 'don't'
+Phrase #9 is 'think'
+Phrase #10 is 'it'
+Phrase #11 is 'will'
+Phrase #12 is 'work'
+Phrase #13 is 'let'
+Phrase #14 is 'us'
+Phrase #15 is 'check'
+Phrase #16 is 'what'
+Phrase #17 is 'you'
+Phrase #18 is 'people'
+Phrase #19 is 'say'
+Phrase #20 is 'haaa'
+Type a few phrases seperated by comma (q - to quit):
+One;Two;Three;Four
+Phrase #1 is 'One;Two;Three;Four'
+Type a few phrases seperated by comma (q - to quit):
+    ,      ,          ,
+Phrase #1 is '    '
+Phrase #2 is '      '
+Phrase #3 is '          '
+Type a few phrases seperated by comma (q - to quit):
+q
+*** End of Tokenizing Words Demo ***
+
+*** Start of Tokenizing Sentences Demo ***
+Type a few sentences seperated by dot (q - to quit):
+Hello. This is a test. Bye.
+Word #1 is 'Hello'
+Word #2 is ' This is a test'
+Word #3 is ' Bye'
+Type a few sentences seperated by dot (q - to quit):
+
+Type a few sentences seperated by dot (q - to quit):
+Hello This is a test Bye
+Word #1 is 'Hello This is a test Bye'
+Type a few sentences seperated by dot (q - to quit):
+Hello.         This is a test.        Bye.
+Word #1 is 'Hello'
+Word #2 is '         This is a test'
+Word #3 is '        Bye'
+Type a few sentences seperated by dot (q - to quit):
+....
+Type a few sentences seperated by dot (q - to quit):
+Mr.Smith went to Washington, D.C. He enjoyed it.
+Word #1 is 'Mr'
+Word #2 is 'Smith went to Washington, D'
+Word #3 is 'C'
+Word #4 is ' He enjoyed it'
+Type a few sentences seperated by dot (q - to quit):
+q
+*** End of Tokenizing Sentences Demo ***
+
+1 - Fundamentals
+2 - Manipulating
+3 - Converting
+4 - Tokenizing
+0 - exit
+Which module to run?
+0
+
+C:\Users\ETS7.36289828\Desktop\sem1\CPR101\mainn\x64\Debug\mainn.exe (process 8652) exited with code 0.
+Press any key to close this window . . .
